@@ -5,8 +5,11 @@ import { Download, FileText, Star, Award, Code, Database, Network, Shield } from
 
 export function CompetencesSection() {
   const handleDownloadCompetences = () => {
-    // Ici vous pourriez ajouter un lien vers votre fichier de compétences
-    alert("Fichier de compétences téléchargé ! (Fonctionnalité à implémenter avec votre fichier)");
+    // Téléchargement du tableau de compétences en PDF
+    const link = document.createElement('a');
+    link.href = '/public/competences-enzo-marechal.pdf';
+    link.download = 'Competences-Enzo-Marechal.pdf';
+    link.click();
   };
 
   const certifications = [

@@ -19,10 +19,11 @@ import {
 
 export function CVSection() {
   const handleDownloadCV = () => {
-    // Ici vous pourriez ajouter un lien vers votre CV en PDF
-    alert(
-      "CV téléchargé ! (Fonctionnalité à implémenter avec votre fichier CV)",
-    );
+    // Téléchargement du CV en PDF
+    const link = document.createElement('a');
+    link.href = '/public/cv-enzo-marechal.pdf';
+    link.download = 'CV-Enzo-Marechal.pdf';
+    link.click();
   };
 
   return (
