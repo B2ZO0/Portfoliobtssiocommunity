@@ -21,7 +21,7 @@ export function CVSection() {
   const handleDownloadCV = () => {
     // Téléchargement du CV en PDF
     const link = document.createElement('a');
-    link.href = '/public/cv-enzo-marechal.pdf';
+    link.href = '${import.meta.env.BASE_URL}cv-enzo-marechal.pdf';
     link.download = 'CV-Enzo-Marechal.pdf';
     link.click();
   };
