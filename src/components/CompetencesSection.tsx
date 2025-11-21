@@ -6,15 +6,18 @@ import { Download, FileText, Star, Award, Code, Database, Network, Shield } from
 export function CompetencesSection() {
   const handleDownloadCompetences = () => {
     // Téléchargement du tableau de compétences en PDF
-    const handleDownloadCompetences = () => {
-  const fileUrl = import.meta.env.BASE_URL + "competences-enzo-marechal.pdf";
-  const link = document.createElement("a");
-  link.href = fileUrl;
-  link.download = "Competences-Enzo-Marechal.pdf";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-};
+    export function CompetencesSection() {
+  const handleDownloadCompetences = () => {
+    const fileUrl = "https://b2zo0.github.io/Portfoliobtssiocommunity/competences-enzo-marechal.pdf";
+
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.setAttribute("download", "Competences-Enzo-Marechal.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
 
   const certifications = [
     {
