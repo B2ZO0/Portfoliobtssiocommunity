@@ -23,7 +23,9 @@ export function CVSection() {
     const link = document.createElement('a');
     link.href = "/Portfoliobtssiocommunity/cv-enzo-marechal.pdf";
     link.download = 'CV-Enzo-Marechal.pdf';
-    link.click();
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
   };
 
   return (
