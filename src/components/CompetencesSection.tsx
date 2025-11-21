@@ -7,7 +7,7 @@ export function CompetencesSection() {
   const handleDownloadCompetences = () => {
     // Téléchargement du tableau de compétences en PDF
     const link = document.createElement('a');
-    link.href = '/public/competences-enzo-marechal.pdf';
+    link.href = '/Portfoliobtssiocommunity/competences-enzo-marechal.pdf';
     link.download = 'Competences-Enzo-Marechal.pdf';
     link.click();
   };
