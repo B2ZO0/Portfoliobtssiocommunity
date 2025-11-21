@@ -19,16 +19,15 @@ import {
 
 export function CVSection() {
   const handleDownloadCV = () => {
-    // Téléchargement du CV en PDF
-    const handleDownloadCV = () => {
-  const fileUrl = import.meta.env.BASE_URL + "cv-enzo-marechal.pdf";
-  const link = document.createElement("a");
-  link.href = fileUrl;
-  link.download = "CV-Enzo-Marechal.pdf";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-};
+    const fileUrl = "https://b2zo0.github.io/Portfoliobtssiocommunity/cv-enzo-marechal.pdf";
+
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.setAttribute("download", "CV-Enzo-Marechal.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <section id="cv" className="py-20 bg-muted/30">
