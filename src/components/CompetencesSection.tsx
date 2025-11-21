@@ -9,7 +9,9 @@ export function CompetencesSection() {
     const link = document.createElement('a');
     link.href = "/Portfoliobtssiocommunity/competences-enzo-marechal.pdf";
     link.download = 'Competences-Enzo-Marechal.pdf';
-    link.click();
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
   };
 
   const certifications = [
